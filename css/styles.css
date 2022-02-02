@@ -620,12 +620,15 @@ img {
   /* align-items: center; */
 
   background-color: var(--color-card-overlay);
+  background-clip: padding-box;
   overflow: auto;
   transform: translateY(100%);
 
   transition-property: box-shadow, transform;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
+
+  border: solid 10px var(--color-card-overlay);
 }
 
 .card-overlay::-webkit-scrollbar {
