@@ -878,7 +878,7 @@ img {
 }
 
 .form-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
@@ -893,19 +893,21 @@ img {
   position: relative;
 }
 
-.form-field:not(:last-child) {
-  margin-bottom: 28px;
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field-textarea {
+  margin-bottom: 20px;
 }
 
 .form-input-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(calc(-100% - 4px));
+  margin-bottom: 4px;
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  text-align: left;
 
   color: var(--color-secondary);
 }
@@ -931,7 +933,6 @@ img {
   transition-timing-function: var(--transition-function);
 }
 
-.form-field-input:hover,
 .form-field-input:focus {
   outline: 1px solid var(--color-active);
 }
@@ -954,7 +955,6 @@ img {
   position: absolute;
   top: 50%;
   left: 12px;
-  transform: translateY(-50%);
 
   transition-property: color;
   transition-duration: var(--transition-time);
@@ -962,7 +962,6 @@ img {
   pointer-events: none;
 }
 
-.form-field-input:hover + .form-field-icon,
 .form-field-input:focus + .form-field-icon {
   color: var(--color-active);
 }
@@ -972,7 +971,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .form-checkbox-label {
